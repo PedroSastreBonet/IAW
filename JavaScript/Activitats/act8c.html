@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 8</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var x, y;
+				x=prompt("Introdueix el valor de x:");
+				y=prompt("Introdueix el valor de y:");
+				x=parseInt(x);
+				y=parseInt(y);
+				if (x>0 && y>0) {
+					document.write("Primer Quadrant");
+				}
+				else {
+					if (x<0 && y>0) {
+						document.write("Segon Quadrant");
+					}
+					else{
+						if (x<0 && y<0) {
+							document.write("Tercer Quadrant");
+						}
+						else {
+							document.write("Quart Quadrant");
+						}
+					}
+				}
+			</script>
+		</body>
+</html>

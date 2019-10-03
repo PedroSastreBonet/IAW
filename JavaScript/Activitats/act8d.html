@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 8</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var salari, anys;
+				salari=prompt("Introdueix el salari:");
+				anys=prompt("Introdueix els anys:");
+				salari=parseInt(salari);
+				anys=parseInt(anys);
+				if (salari<500 && anys>=10) {
+					var incre,total;
+					incre=salari*0.2;
+					total=salari+incre;
+					document.write("Salari del primer cas:"+total);
+				}
+				else {
+					if (salari<500 && anys<10) {
+					var incre,total;
+					incre=salari*0.05;
+					total=salari+incre;
+					document.write("Salari del segon cas:"+total)
+					}
+					else {
+						document.write("No hi ha increment");
+						}
+					}
+			</script>
+		</body>
+</html>
