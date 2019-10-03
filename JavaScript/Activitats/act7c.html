@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 7</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var num1;
+				num1=prompt("Introdueix nombre entre 0 i 999:");
+				num1=parseInt(num1);
+				if (num1 <= 9) {
+					document.write("Es un nombre de 1 dígit");
+				}
+				else {
+					if (num1 <= 99) {
+						document.write("Es un nombre de 2 dígits");
+					}
+					else {
+						document.write("Es un nombre de 3 dígits");
+					}
+				}
+			</script>
+		</body>
+</html>
