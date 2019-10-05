@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 10</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var x,aprovats,suspesos,nota;
+				x=1;
+				aprovats=0;
+				suspesos=0;
+				nota=0;
+				while (x<=10) {
+					nota=prompt("Introduiex nota:");
+					nota=parseInt(nota);
+					if (nota>=5) {
+						aprovats++;
+					}
+					else {
+						suspesos++;
+					}	
+				x++;
+				}
+			    document.write("Han aprovat: "+aprovats);
+			    document.write("<br>");
+				document.write("Han suspes: "+suspesos);
+			</script>
+		</body>
+</html>

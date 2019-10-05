@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 10</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var x,salari,pobres,rics,total;
+				x=1;
+				pes=0;
+				pobres=0;
+				rics=0;
+				total=0;
+				while (x<=5) {
+					salari=prompt("Introduiex salari:");
+					salari=parseInt(salari);
+					if (salari>=500 && salari<=1000) {
+						pobres++;
+					}
+					else {
+						rics++;
+					}
+				total=total+salari;	
+				x++;
+				}
+				document.write("Salari pobre: " + pobres);
+				document.write("<br>");
+				document.write("Salari ric: " + rics);
+				document.write("<br>");
+				document.write("Salari total: " + total);
+			</script>
+		</body>
+</html>
