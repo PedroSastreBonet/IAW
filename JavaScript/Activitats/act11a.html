@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 11</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var num=0, sum=0;
+				do {
+					num=prompt("Introdueix el nombre que vols sumar: ");
+					num=parseInt(num);
+					sum=sum+num;
+					}
+				while(num!=9999);
+				sum=sum-9999;
+				if (sum>0) {
+						document.write("El valor de la suma es positiu: "+sum);
+					}
+					else {
+						if (sum<0) {
+							document.write("El valor de suma es negatiu: "+sum);
+						}
+						else {
+							document.write("El valor de la suma es cero: "+sum);
+						}
+					}
+			</script>
+		</body>
+</html>

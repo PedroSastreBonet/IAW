@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 11</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var id=0, edad=0, sexe=0, total=0,home=0,dona=0, home_edad=0, edadvella=0, idvella=0, idjove=0,edadjove=0;
+				do {
+					id=prompt("Introdueix identificador de la persona: ");
+					id=parseInt(id);
+					edad=prompt("Introdueix edad de la persona: ");
+					edad=parseInt(edad);
+					sexe=prompt("Introdueix sexe de la persona (Home,Dona): ");
+					total++;
+					if (sexe=="Home") {
+						home++;
+						if (edad<edadjove) {
+							edadjove=edad;
+							idjove=id;
+						}
+						if (edad>=18 && edad<=65) {
+						home_edad++;
+						}
+					}
+					else {
+						dona++;
+						if (edad>edadvella) {
+								edadvella=edad;
+								idvella=id;
+						}
+					}
+				}
+				while(id!=0);
+				document.write("Hi ha "+total+" persones");
+				document.write("<br>");
+				document.write("Hi ha "+home+" homes");
+				document.write("<br>");
+				document.write("Hi ha "+dona+" dones");
+				document.write("<br>");
+				document.write("Hi ha "+home_edad+" homes entre 18 i 65 anys");
+				document.write("<br>");
+				document.write("L'identificador de la dona mes vella es "+idvella);
+				document.write("<br>");
+				document.write("L'identificador de l'home mes jove es "+idjove);
+			</script>
+		</body>
+</html>

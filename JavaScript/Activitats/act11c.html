@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 11</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var id=0, nom=0, diners=0, sum=0;
+				do {
+					id=prompt("Introdueix id del client: ");
+					id=parseInt(id);
+					nom=prompt("Introdueix el nom del client: ");
+					diners=prompt("Introdueix els diners del client: ");
+					diners=parseInt(diners);
+					sum=sum+diners;
+					document.write("El client "+nom+" es el propietari de la conta "+id+" que te "+diners+" €");
+					document.write("<br>");
+					}
+				while(id!=0);
+				document.write("Suma total dels diners: "+sum+" €");
+			</script>
+		</body>
+</html>
