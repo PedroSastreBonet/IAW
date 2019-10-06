@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 12</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var b=0, h=0, a=0, gran=0;
+				for (x=0;x<3;x++) {
+					b=prompt("Introdueix base del triangle: ");
+					h=prompt("Introdueix altura del triangle: ");
+					b=parseInt(b);
+					h=parseInt(h);
+					a=(b*h)/2;
+					document.write("Àrea : "+a);
+					document.write("<br>");
+					if (a>12) {
+						gran++;
+					}
+				}
+				document.write("Hi ha "+gran+" triagles amb àrea major que 12");
+			</script>
+		</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 12</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var nota=0,suma=0,sumb=0,sumc=0,mita=0,mitb=0,mitc=0;
+				for (x=1;x<23;x++) {
+					if (x<6) {
+						nota=prompt("Introdueix nota classe A:");
+						nota=parseInt(nota);
+						suma=suma+nota;
+					}
+					else if (x<12) {
+						nota=prompt("Introdueix nota classe B:");
+						nota=parseInt(nota);
+						sumb=sumb+nota;
+					}
+					else {
+						nota=prompt("Introdueix nota classe C:");
+						nota=parseInt(nota);
+						sumc=sumc+nota;
+					}
+				}
+				mita=suma/5;
+				mitb=sumb/6;
+				mitc=sumc/11;
+				document.write("La mitja de la classe A es: "+mita+"<br>");
+				document.write("La mitja de la classe B es: "+mitb+"<br>");
+				document.write("La mitja de la classe C es: "+mitc+"<br>");
+				if (mita>mitb && mita>mitc) {
+					document.write("La classe A te millor mitja");
+				}
+				else if (mitb>mita && mitb>mitc) {
+					document.write("La classe B te millor mitja");
+				}
+				else {
+					document.write("La classe C te millor mitja");
+				}
+			</script>
+		</body>
+</html>

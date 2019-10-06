@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 12</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var num=0,pos=0,neg=0,par=0,sum=0;
+				for (x=1;x<11;x++) {
+					num=prompt("Introdueix nombres: ");
+					num=parseInt(num);
+					if (num>0) {
+						pos++;
+					}
+					else {
+						neg++;
+					}
+					if (num%2==0) {
+						par++;
+						sum=sum+num;
+					}
+				}
+				document.write("Hi ha "+pos+" nombres positius"+"<br>");
+				document.write("Hi ha "+neg+" nombres negatius"+"<br>");
+				document.write("Hi ha "+par+" nombres pars"+"<br>");
+				document.write("La suma dels nombres pars es: "+sum);
+			</script>
+		</body>
+</html>

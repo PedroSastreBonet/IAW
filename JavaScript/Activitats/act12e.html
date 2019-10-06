@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 12</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var c1=0,c2=0,c3=0,equi=0,iso=0,sca=0,total=0;
+				for (x=1;x<5;x++) {
+					c1=prompt("introdueix primer costat: ");
+					c2=prompt("introdueix segon costat: ");
+					c3=prompt("introdueix tercer costat: ");
+					c1=parseInt(c1);
+					c2=parseInt(c2);
+					c3=parseInt(c3);
+					if (c1==c2 && c2==c3) {
+						equi++;
+						document.write("Es equilater"+"<br>");
+					}
+					else if (c1==c2 || c2==c3 || c1==c3) {
+						iso++;
+						document.write("Es isoceles"+"<br>");
+					}
+					else {
+						sca++;
+						document.write("Es scale"+"<br>");
+					}
+				}
+				document.write("Hi ha "+equi+" triangles equilaters"+"<br>");
+				document.write("Hi ha "+iso+" triangles isoceles"+"<br>");
+				document.write("Hi ha "+sca+" triangles scalè"+"<br>");
+				if (equi>iso && equi>sca) {
+					document.write("Hi ha mes equilaters"+"<br>");
+				}
+				else if (iso>equi && iso>sca) {
+					document.write("Hi ha mes isoceles"+"<br>");
+				}
+				else {
+					document.write("Hi ha mes scalès");
+				}
+			</script>
+		</body>
+</html>
