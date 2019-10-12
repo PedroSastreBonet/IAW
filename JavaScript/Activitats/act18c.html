@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 18</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var paraula=prompt("Introdueix paraula");
+				function isPalindromo(paraula) {
+					for (i=0,j=paraula.length-1;i<paraula.length;i++,j--) {
+						if (paraula.charAt(i)!==paraula.charAt(j)) {
+							return false;
+						}	
+					}
+					return true;
+				}
+
+				if (isPalindromo(paraula)) {
+					document.write("Es un palindromo");
+				}
+				else {
+					document.write("No es un palindromo");
+				}
+			</script>
+		</body>
+</html>
