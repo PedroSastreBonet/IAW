@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 16</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var long=0;
+				long=prompt("De quina longitut vols l'array?");
+				long=parseInt(long);
+
+				a=new Array(long);
+
+				function load(array) {
+					var sum=0;
+					for (i=0;i<array.length;i++) {
+						if (i<2) {
+							array[i]=Math.random() * (10 - 1) + 1;
+							sum=sum+array[i];
+						}
+						else {
+							array[i]=sum;
+						}
+					}
+				}
+				function show(array) {
+					for (i=0;i<array.length;i++) {
+						document.write(array[i]);
+						document.write("<br>");
+
+					}
+				}
+
+				function sum(array) {
+					var sum=0;
+					for (i=0;i<array.length;i++) {
+						sum=sum+array[i];
+					}
+				return sum;
+				}
+
+				load(a);
+				show(a);
+				document.write("La suma total dels nombres es: "+sum(a));			
+			</script>
+		</body>
+</html>

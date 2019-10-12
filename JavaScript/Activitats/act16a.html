@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 16</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				a=new Array(8);
+
+				function load(array) {
+					for (i=0;i<array.length;i++) {
+						array[i]=Math.random() * (10 - 1) + 1;
+					}
+				}
+
+				function show(array) {
+					for (i=0;i<array.length;i++) {
+						document.write(array[i]);
+						document.write("<br>");
+
+					}
+				}
+
+				function sum(array) {
+					var sum=0;
+					for (i=0;i<array.length;i++) {
+						sum=sum+array[i];
+					}
+				return sum;
+				}
+
+				function avg(array) {
+					return sum(array)/array.length;
+				}
+
+				function sum5(array) {
+					var sum5=0;
+					for (i=0;i<array.length;i++) {
+						if (array[i]>=5) {
+							sum5=sum5+array[i];
+						}
+					}
+					return sum5;
+				}
+
+				function contar(array) {
+					var cont=0;
+					for (i=0;i<array.length;i++) {
+						if (array[i]>=5) {
+							cont++;
+						}
+					}
+					return cont;
+				}
+
+				load(a);
+
+				show(a);
+
+				document.write("La suma total dels 8 nombres es: "+sum(a)+"<br>");
+
+				document.write("La mitja dels 8 nombres es: "+avg(a)+"<br>");
+
+				document.write("La suma dels nombres majors que 5 es: "+sum5(a)+"<br>");
+				document.write("Hi ha "+contar(a)+" nombres mes grans que 5");
+			</script>
+		</body>
+</html>
