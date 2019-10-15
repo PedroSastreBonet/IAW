@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 22</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function price () {
+					var x=document.getElementById("select");
+					document.getElementById("preu").value=x.options[x.selectedIndex].value
+				}
+				
+					
+				
+			</script>
+			<form>
+				<select id="select" onChange="price()">
+					<option value="4">Pepperoni</option>
+					<option value="7">Quatro Formaggi</option>
+					<option value="12">Procciuto</option>
+				</select>
+				<input type="text" id="preu">
+			</form>
+		</body>
+</html>
