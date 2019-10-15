@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 21</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function correct () {
+					var x=document.getElementById("x").value;
+					var y=document.getElementById("y").value;
+					if (x==y) {
+						alert("Passwords are equal");
+					}
+					else {
+						alert("Passwords are not equal");
+					}
+					
+				}
+			</script>
+			<form>
+				Password: <input type="password" id="x"><br/>
+				Password: <input type="password" id="y"><br/>
+				<input type="button" onclick="correct()" value="Send">
+			</form>
+		</body>
+</html>
