@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 22</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function price() {
+					var x=document.getElementById("CPU");
+					var y=document.getElementById("Monitor");
+					var z=document.getElementById("SSD");
+
+					var valx=parseInt(x.options[x.selectedIndex].value);
+					var valy=parseInt(y.options[y.selectedIndex].value);
+					var valz=parseInt(z.options[z.selectedIndex].value);
+
+					var total=valx+valy+valz;
+
+					document.getElementById("preu").value=total;
+				}
+				
+					
+			</script>
+			<form>
+				<select id="CPU">
+					<option value="400">Intel I3</option>
+					<option value="600">Intel I5</option>
+					<option value="800">Intel I7</option>
+				</select>
+				<select id="Monitor">
+					<option value="250">Samusng 20'</option>
+					<option value="350">Samusng 22'</option>
+					<option value="550">Samusng 26'</option>
+				</select>
+				<select id="SSD">
+					<option value="300">500GB</option>
+					<option value="440">1TB</option>
+					<option value="500">3TB</option>
+				</select>
+				<input type="text" id="preu">
+				<input value="Calculate" type="button" onclick="price()">
+
+			</form>
+		</body>
+</html>
