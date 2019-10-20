@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 24</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function older () {
+					if (document.getElementById('radio1').checked && document.getElementById('radio2').checked) {
+ 						return alert("No poden estar seleccionades totes dues")
+ 					}
+ 					if (document.getElementById('radio1').checked) {
+ 						return alert("Pots entrar");
+ 					}
+ 					else {
+ 						return alert("No pots entrar");
+ 					}
+				}		
+			</script>
+			<form>
+				<input type="radio" id="radio1">+18
+				<input type="radio" id="radio2">-18
+				<button  type="button" onclick="older()">Enter</button>
+			</form>
+		</body>
+</html>
