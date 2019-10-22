@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 26</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function check () {
+					var p = document.getElementById("pass").value;
+					var f = /\w{6,19}/;
+					if (f.test(p)) {
+						return alert("Correct");
+					}
+					return alert("No Correct");
+				}		
+			</script>
+			<form>
+				Username: <input type="text" id="user">
+				Password: <input type="password" id="pass">
+				<button  type="button" onclick="check()">Enter</button>
+			</form>
+		</body>
+</html>
