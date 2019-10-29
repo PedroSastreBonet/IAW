@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 5</title>
+			<script src="..\jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+				$(document).ready(function(){
+					$("#small").click(function(){
+						$("p:nth-of-type(odd)").css("font-size","10px");
+					});
+					$("#medium").click(function(){
+						$("p:nth-of-type(odd)").css("font-size","15px");
+					});
+					$("#big").click(function(){
+						$("p:nth-of-type(odd)").css("font-size","20px");
+					});
+				});
+			</script>
+			<h1>Tardes</h1>
+			<p>Buenas</p>
+			<h1>Tardes</h1>
+			<p>Buenas</p>
+			<h1>Tardes</h1>
+			<p>Buenas</p>
+			<h1>Tardes</h1>
+			<p>Buenas</p>
+			<h1>Tardes</h1>
+			<p>Buenas</p>
+
+			<button type="button" id="small">10px</button>
+			<button type="button" id="medium">15px</button>
+			<button type="button" id="big">20px</button>
+		</body>
+</html>
