@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 4</title>
+			<script src="..\jquery-3.4.1.js"></script>
+		</head>
+		<body>
+			<script>
+				$(document).ready(function(){
+					$("table#t1 tr").click(function(){
+						$(this).css("background-color","red")
+					});
+					$("table#t2 td").click(function(){
+						$(this).css("font-size","20px")
+					});
+				});
+			</script>
+			<table border=1 id="t1">
+				<tr>
+					<td>Tardes</td>
+				</tr>
+				<tr>
+					<td>Buenas</td>
+				</tr>
+				<tr>
+					<td>Tardes</td>
+				</tr>
+			</table>
+			<br>
+			<table border=1 id="t2">
+				<tr>
+					<td>Tardes</td>
+				</tr>
+				<tr>
+					<td>Buenas</td>
+				</tr>
+				<tr>
+					<td>Tardes</td>
+				</tr>
+			</table>
+		</body>
+</html>
