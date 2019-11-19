@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="..\bootstrap-4.3.1-dist\css\bootstrap.min.css">
+    <title>Apuntes</title>
+    <style>
+        .row{
+            background: lightblue;
+            text-align: center;
+            margin:10px 0;
+        }
+
+        .uno {background: red;}
+        .dos {background: yellow; padding: 0 20px;}
+        .tres {background: red;}
+
+        .col {
+            border: 1px solid blue;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .columna {
+            background: green;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-flex flex-row justify-content-between">
+            <div class="col uno"><h3>1</h3></div>
+            <div class="col dos"-><h3>2</h3></div>
+            <div class="col tres"><h3>3</h3></div>
+        </div>
+        <div class="row d-flex flex-row-reverse justify-content-between">
+            <div class="col uno"><h3>1</h3></div>
+            <div class="col dos"><h3>2</h3></div>
+            <div class="col tres"><h3>3</h3></div>
+        </div>
+    </div>
+    <script src="..\bootstrap-4.3.1-dist\js\jquery-3.4.1.js"></script>
+    <script type="..\bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.row {
+	padding: 10px;
+}
+
+.hd {
+	background-color: lightgreen;
+	color: white;
+}
+
+body {
+	background-color: grey;
+}
+
+.ma {
+	background-color: white;
+}
+
+.as {
+	background-color: lightblue;
+	padding: 40px;
+	
+}
+
+.sec {
+	color: white;
+	background-color: #1ebed4;
+}
+
+.fo {
+	background-color: black;
+	color: white;
+}
+

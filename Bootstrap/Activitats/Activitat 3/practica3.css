@@ -1,0 +1,12 @@
+textarea {
+	max-width: 500px;
+	max-height: 200px;
+	min-width: 100px;
+	min-height: 100px;
+	margin-top: 30px;
+}
+
+button {
+	margin-top: 20px;
+	float: right;
+}
