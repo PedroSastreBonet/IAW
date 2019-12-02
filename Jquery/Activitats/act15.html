@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Activitat 15</title>
+	<script src="..\jquery-3.4.1.js"></script>
+    <style>
+        #div {
+            width: 800px;
+            height: 70px;
+            border: 1px solid red;
+        }
+
+        .clicked {
+            width: 250px !important;
+            height: 250px !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+    </div>
+<script>
+    $("#div").dblclick(function () {
+        $(this).toggleClass("clicked");
+    });
+</script>
+</body>
+</html>

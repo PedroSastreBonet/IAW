@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 7</title>
+			<script src="..\jquery-3.4.1.js"></script>
+		</head>
+<body>
+	<a id="l1" href="">Link</a>
+    <br>
+    <button link="https://google.es">Google</button>
+    <button link="https://www.ikea.com/es/es/p/gersby-libreria-blanco-70261131">Ikea</button>
+    <button link="https://www.milkywayediciones.com">Milky</button>
+    <script>
+        $("button").click(function () { 
+            $("#l1").attr("href", $(this).attr("link"));
+        });
+    </script>
+</body>
+</html>

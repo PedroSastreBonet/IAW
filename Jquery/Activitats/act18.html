@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 18</title>
+	<script src="..\jquery-3.4.1.js"></script>
+</head>
+<body>
+    <table id="table">
+        <tr id="last">
+            <td colspan="2" style="text-align: center;">
+                <button id="add">Afegir</button>
+            </td>
+        </tr>
+    </table>
+<script>
+    $("#add").click(function () {
+        let tab;
+        let ele =
+        $('<tr class="row">');
+        tab = $('<td>').append($('<input type="text" placeholder="Text">'))
+        ele.append(tab);
+        tab = $('<td>').append($('<button class="del">Borrar</button>').click(del));
+        ele.append(tab);
+        $("#last").before(ele);
+    });
+
+    function del() {
+        $(this).parentsUntil(".row").parent().remove();
+    }
+</script>
+</body>
+</html>

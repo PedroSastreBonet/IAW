@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 23</title>
+	<script src="..\jquery-3.4.1.js"></script>
+</head>
+<body>
+    <a href="https://amazon.es">Amazon</a>
+    <a href="https://inforipoll.es/">Informàtica Ripoll</a>
+    <a href="https://youtube.com">YouTube</a>
+    <a href="http://iesmanacor.cat">IES Manacor</a>
+<script>
+    $("a").each(function () {
+        if ($(this).attr('href').indexOf('.es') > -1)
+            $(this).css("background", "#a1b2c3");
+    });
+</script>
+</body>
+</html>

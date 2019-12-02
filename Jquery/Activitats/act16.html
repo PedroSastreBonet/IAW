@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 16</title>
+	<script src="..\jquery-3.4.1.js"></script>
+    <style>
+        input[type=text] {
+            color: green;        
+    </style>
+</head>
+<body>
+<input type="text" value="Input">
+<input type="text" value="Input">
+<script>
+    $("input[type=text]").focus(function () {
+        $(this).css("color", "blue");
+    });
+    $("input[type=text]").blur(function () {
+        $(this).css("color", "green");
+    });
+</script>
+</body>
+</html>

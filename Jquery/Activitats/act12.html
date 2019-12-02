@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 12</title>
+			<script src="..\jquery-3.4.1.js"></script>
+		</head>
+<body>
+<table>
+        <tr>
+            <td>Hola</td>
+            <td>Tardes</td>
+        </tr>
+        <tr>
+            <td>Hola</td>
+            <td>Tarxes</td>
+        </tr>
+    </table>
+<script>
+    $("td").each(function () {
+        $(this).hover(enter, leave);
+    });
+
+    function enter() {
+        $(this).css("background", "#123456");
+    }
+    function leave() {
+        $(this).css("background", "white");
+    }
+</script>
+</body>
+</html>

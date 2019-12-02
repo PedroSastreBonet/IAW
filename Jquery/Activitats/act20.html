@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 20</title>
+	<script src="..\jquery-3.4.1.js"></script>
+    <style>
+        #div2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus itaque repellat ex totam, nemo, eum dicta, beatae aut reprehenderit enim quo blanditiis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque molestias, quisquam veritatis sequi, et, eius assumenda maiores ad consectetur dolorem earum dolorum illum dignissimos deleniti?</p>
+        p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium aliquid ea libero necessitatibus eum quae saepe maxime eveniet voluptatum, cupiditate quidem nulla quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eligendi magni repellendus cumque minima placeat. Consequuntur soluta eveniet blanditiis ex odio tempora officia harum sunt nesciunt quas veniam molestiae non, quasi doloremque saepe magnam a aliquam quod nisi voluptas eum. Ab illo quod doloremque mollitia!</p>
+        p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium aliquid ea libero necessitatibus eum quae saepe maxime eveniet voluptatum, cupiditate quidem nulla quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eligendi magni repellendus cumque minima placeat. Consequuntur soluta eveniet blanditiis ex odio tempora officia harum sunt nesciunt quas veniam molestiae non, quasi doloremque saepe magnam a aliquam quod nisi voluptas eum. Ab illo quod doloremque mollitia!</p>
+    </div>
+    <div id="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium aliquid ea libero necessitatibus eum quae saepe maxime eveniet voluptatum, cupiditate quidem nulla quod.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eligendi magni repellendus cumque minima placeat. Consequuntur soluta eveniet blanditiis ex odio tempora officia harum sunt nesciunt quas veniam molestiae non, quasi doloremque saepe magnam a aliquam quod nisi voluptas eum. Ab illo quod doloremque mollitia!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus itaque repellat ex totam, nemo, eum dicta, beatae aut reprehenderit enim quo blanditiis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque molestias, quisquam veritatis sequi, et, eius assumenda maiores ad consectetur dolorem earum dolorum illum dignissimos deleniti?</p>
+    </div>
+<script>
+    $("#div1").click(function () {
+        $(this).fadeOut(1000, function() {
+            $("#div2").fadeIn(1000);
+        });
+    });
+</script>
+</body>
+</html>

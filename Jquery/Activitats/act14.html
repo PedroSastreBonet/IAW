@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Activitat 14</title>
+			<script src="..\jquery-3.4.1.js"></script>
+		</head>
+<body>
+<button>Boto 1</button>
+<button>Boto 2</button>
+<script>
+    $("button")
+        .mouseup(function () {
+            $(this).css({"background": "#ddd", "border-color": "#ddd"})
+        })
+        .mousedown(function () {
+            $(this).css({"background": "red", "border-color": "red"})
+        });
+</script>
+</body>
+</html>
